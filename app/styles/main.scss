@@ -20,8 +20,8 @@ h1 {
 }
 
 nav {
+    margin-left: -25px;
     position: fixed;
-    /* vertical-align: middle; */
     top: 20%;
     ul {
       list-style: none;
@@ -51,4 +51,7 @@ footer {
   }
 }
 
+section#inicio {
+  background-color: #d6d8b6;
+}
 
