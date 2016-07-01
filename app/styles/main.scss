@@ -1,5 +1,10 @@
 // bower:scss
 // endbower
+article {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
 
 body {
   background: #ffffff;
@@ -8,12 +13,27 @@ body {
   margin: 0;
 }
 
+footer {
+  background-color: gray;
+  color: white;
+  height: auto;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 1em 0 0.8em;
+  vertical-align: middle;
+  a {
+    position: relative;
+    vertical-align: bottom;
+  }
+}
+
 h1 , h2 , h3 , h4 , h5 , h6  {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Suez One', serif;
 
 }
 
 h1 {
+  font-family: 'Permanent Marker', cursive;
   font-size: 1.8em;
   line-height: 1;
   margin-bottom: 1em;
@@ -34,34 +54,22 @@ nav {
 }
 
 section {
-  max-width: 1280px;
   margin: 0 auto;
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
 }
 
-article {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px;
+
+p {
+  font-family: 'Scope One', serif;
 }
-footer {
-  background-color: gray;
-  color: white;
-  height: auto;
-  font-size: 1.8em;
-  font-weight: bold;
-  padding: 1em 0 0.8em;
-  vertical-align: middle;
-  a {
-    position: relative;
-    vertical-align: bottom;
-  }
-}
+
 
 section#inicio {
   background-color: #d6d8b6;
+  height: 100%;
+  width: 100%;
 }
 
 .boton {
