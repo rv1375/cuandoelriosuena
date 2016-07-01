@@ -94,6 +94,26 @@ section#inicio {
   padding: 0;
 }
 
+.manito {
+  background: #fd8c02;
+  margin-top: 20px;
+  transition: 0.1s all ease-in-out;
+  overflow: hidden;
+  iframe {
+    display: none;
+  }
+  &.activo {
+    border-radius:25px;
+    padding-left:20px;
+    padding-right:20px;
+    width: 193px;
+    iframe {
+      display: inline-block;
+      margin-top: 16px;
+      vertical-align: top;
+    }
+  }
+}
 
 .persona {
   background-image: url( http://placehold.it/90x90 );
@@ -119,7 +139,7 @@ section#inicio {
   filter: none;
 }
 
-
+@media only screen and (min-width: 600px){
 
 
 
