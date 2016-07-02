@@ -12,3 +12,12 @@ $('a.scrollTo').on('click', function(){
   }, 1000 );
   return false;
 })
+
+$('.manito img').on('click', function(){ 
+        if ($('.manito').hasClass('activo')) {
+            $('.manito').removeClass('activo');
+
+        }else{
+            $('.manito').addClass('activo');
+        }
+    });
