@@ -11,6 +11,7 @@ body {
   font-family: 'Inconsolata', monospace;
   color: #000;
   margin: 0;
+  text align: center;
 }
 
 footer {
@@ -77,8 +78,16 @@ section#inicio {
 
 .boton {
   width: 19%;
+}
 
-
+.compartir {
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  line-height: 78px;
+  margin-bottom: 20px;
 }
 
 .descripcion {
@@ -139,7 +148,9 @@ section#inicio {
   filter: none;
 }
 
-@media only screen and (min-width: 600px){
 
+#ocho {
+  top: -10px;
+}
 
-
+@media only screen and (min-width: 600px)
