@@ -9,6 +9,7 @@ body {
   background: #ffffff;
   color: #000;
   margin: 0;
+  text-align: center;
 }
 
 footer {
@@ -82,9 +83,11 @@ section#inicio {
       padding: 0 15px;
     }
 }
+
 .fondo {
   background-color: rgba(214,216,182,0.3);
 }
+
 .hashtag {
   text-align: left;
 }
@@ -95,11 +98,13 @@ section#inicio {
     padding: 0;
     width: 100%;
 }
+
 .logo2 {
   display: block;
   margin: 0 auto;
   width: 140px;
 }
+
 .bajar {
   color: #656973;
   width: 18px;
@@ -111,6 +116,25 @@ section#inicio {
   border-radius: 50%;
   padding: 5px;
 }
+
+.boton {
+  width: 19%;
+}
+
+.botones {
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  line-height: 78px;
+  margin-bottom: 20px;
+}
+
+.hashtag {
+  color: #df531c;
+  text-align: center;
+}
 .cta {
     margin: 0 auto;
     text-align: center;
@@ -121,6 +145,7 @@ a.boton {
   text-decoration: none;
   color: #df531c;
 }
+
 .datos {
   display: none;
     h4 {
@@ -150,7 +175,7 @@ a.boton {
     border-radius:25px;
     padding-left:20px;
     padding-right:20px;
-    width: 193px;
+    width: 210px;
     iframe {
       display: inline-block;
       margin-top: 16px;
@@ -168,7 +193,13 @@ a.boton {
   height: 90px;
   width: 90px;
 }
+
 .escritor:hover {
   background-color: #fd8c02;
   background-image: url( http://placehold.it/90x90?text=OVER );
+}
+
+
+#ocho {
+  top: -10px;
 }
