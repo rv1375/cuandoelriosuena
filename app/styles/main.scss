@@ -9,7 +9,7 @@ body {
   background: #ffffff;
   color: #000;
   margin: 0;
-  text align: center;
+  text-align: center;
 }
 
 footer {
@@ -86,7 +86,7 @@ section#inicio {
   width: 19%;
 }
 
-.compartir {
+.botones {
   border-radius: 50%;
   cursor: pointer;
   display: inline-block;
@@ -148,7 +148,7 @@ a.boton {
     border-radius:25px;
     padding-left:20px;
     padding-right:20px;
-    width: 193px;
+    width: 210px;
     iframe {
       display: inline-block;
       margin-top: 16px;
@@ -173,11 +173,6 @@ a.boton {
 }
 
 
-
 #ocho {
   top: -10px;
 }
-
-
-@media only screen and (min-width: 600px)
-
