@@ -44,13 +44,16 @@ nav {
         margin: 1em;
       } 
         a {
-          color: #3d3e4e;
+          color: #c1c3c7;
           font-family: 'Suez One', serif;
           text-decoration: none;
           margin-bottom: 10em;
+            &:hover {
+                    color: #df531c;
+            }
         }
           span {
-            background: #b5b9a4;
+            background: #c1c3c7;
             margin-top: 20px;
             border-radius: 50%;
             display: inline-block;
@@ -121,18 +124,17 @@ section#inicio {
 
 .logo2 {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto;                
   width: 140px;
 }
 
 .bajar {
-  color: #656973;
   width: 18px;
   height: 18px;
   margin: 0 auto;
   display: block;
   margin-top: 10px;
-  background: #b5b9a4;
+  background: #c1c3c7;
   border-radius: 50%;
   padding: 5px;
 }
