@@ -20,4 +20,6 @@ $('.manito img').on('click', function(){
         }else{
             $('.manito').addClass('activo');
         }
-    });
+});
+
+$('#mydiv').scrollToFixed();

@@ -40,7 +40,6 @@ nav {
 }
 
 section {
-  max-width: 1280px;
   margin: 0 auto;
   //display: -ms-flex;
   //display: -webkit-flex;
@@ -55,14 +54,29 @@ p {
   }
 }
 
+@keyframes animatedBackground {
+  from { background-position: 0 99%; }
+  to { background-position: 99px 99%; }
+}
+
 section#inicio {
+  background-image: 
+  url(../images/wave_pattern.svg);
+  background-position:bottom;
+  background-repeat: repeat-x;
+  background-size: 100px 100px;
+  animation: animatedBackground 2s linear infinite;
+  width: 100%;
+  height:100vh;
+
     header {
       margin: 0 auto;
     }
-    h1 {
-      font-size: 1.3em;
-      color: #df531c;
-      text-align: center;
+    h2 {
+      color: #3d3c4e;
+      font-size: 1.2em;
+      text-align: left;
+      padding:10px;
     }
     p {
       padding: 0 15px;
@@ -71,18 +85,32 @@ section#inicio {
 .fondo {
   background-color: rgba(214,216,182,0.3);
 }
+.hashtag {
+  text-align: left;
+}
+
 .logo {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 25px;
     padding: 0;
     width: 100%;
 }
-
-.hashtag {
-  color: #df531c;
-  text-align: center;
+.logo2 {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
 }
-
+.bajar {
+  color: #656973;
+  width: 18px;
+  height: 18px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  background: #b5b9a4;
+  border-radius: 50%;
+  padding: 5px;
+}
 .cta {
     margin: 0 auto;
     text-align: center;
