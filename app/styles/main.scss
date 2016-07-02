@@ -30,6 +30,7 @@ h1 , h2 , h3 , h4 , h5 , h6  {
   font-family: 'Suez One', serif;
 }
 
+
 nav {
     display: none;
     margin-left: -25px;
@@ -37,7 +38,26 @@ nav {
     top: 20%;
     ul {
       list-style: none;
+      text-align: left;
     }
+     li {
+        margin: 1em;
+      } 
+        a {
+          color: #3d3e4e;
+          font-family: 'Suez One', serif;
+          text-decoration: none;
+          margin-bottom: 10em;
+        }
+          span {
+            background: #b5b9a4;
+            margin-top: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            margin: 0.4em;
+          }
 }
 
 section {
@@ -195,7 +215,15 @@ a.boton {
   background-image: url( http://placehold.it/90x90?text=OVER );
 }
 
-
 #ocho {
   top: -10px;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    padding-left: 20%;
+  }
+  nav {
+    display: block;
+  }
 }
