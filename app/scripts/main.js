@@ -10,7 +10,7 @@ $(document).ready(function() {
         
         // the magic - scroll to section
         "scrollTop": $('#'+scrollTo).offset().top
-      }, 1000 );
+      }, 2000 );
       return false;
     })
 
@@ -29,11 +29,11 @@ $(document).ready(function() {
         var next = summaries[i + 1];
 
         summary.scrollToFixed({
-            marginTop: 300,
+            marginTop:($(window).height() / 2)-(summary.outerHeight(true) / 2),
             limit: function() {
                 var limit = 0;
                 if (next) {
-                    limit = $(next).offset().top - $(this).outerHeight(true) - 10;
+                    limit = $(next).parent().offset().top - $(this).outerHeight(true) - 20;
                 } else {
                     limit = $('footer').offset().top - $(this).outerHeight(true) - 10;
                 }
@@ -43,5 +43,20 @@ $(document).ready(function() {
         });
     });
 
-
+    $('.cta a').on('click', function(e){
+        e.preventDefault();
+        $('#historia4 p').textillate({
+            outEffects: [ 'hinge' ],
+            loop: true,
+            out: {
+                    effect: 'hinge',
+                    delayScale: 1.5,
+                    delay: 50,
+                    sync: false,
+                    shuffle: false,
+                    reverse: false,
+                    callback: function () {}
+                }
+        });
+    });
 });

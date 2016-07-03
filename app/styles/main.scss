@@ -1,6 +1,8 @@
 // bower:scss
 // endbower
 article {
+  box-sizing: border-box;
+  display: inline-block;
   padding: 10px;
   width: 80%;
 }
@@ -153,10 +155,16 @@ section#inicio {
 
 .cta {
     float: right;
+    margin-top: 10px;
     text-align: center;
     text-decoration: none;
+    width: 100%;
 }
-
+.holder {
+    float: right;
+    width: 20%;
+    margin-top: 10px;
+}
 a.boton {
   color: #3d3e4e;
   text-decoration: none;
@@ -199,9 +207,9 @@ a.boton {
   background-size: 100% 100%;
   border-radius: 50%;
   display: block;
+  height: 50px;
   margin: 0 auto;
-  height: 80px;
-  width: 80px;
+  width: 50px;
 }
 
 .escritor:hover {
@@ -235,12 +243,18 @@ a.boton {
   article {
     width: 50%;
     margin: 0 auto;
-    display: block;
   }
   .cta {
     width: 250px;
     .datos {
       display: block;
     }
+  }
+  .holder {
+  width: 250px;
+  }
+  .escritor {
+    height: 90px;
+    width: 90px;
   }
 }
