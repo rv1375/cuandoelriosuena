@@ -32,6 +32,27 @@ h1 , h2 , h3 , h4 , h5 , h6  {
   font-family: 'Suez One', serif;
 }
 
+li:hover a {
+  color: #df531c;
+}
+
+li:hover span {
+  background: transparent;
+}
+
+li:hover span:before {
+  content: "X";
+  font-family: 'Permanent Marker', cursive;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  position: relative;
+  left: 4px;
+  color: #3d3e4e;
+  font-size: 1.5em;
+}
+
+
 
 nav {
     display: none;
@@ -42,17 +63,17 @@ nav {
       list-style: none;
       text-align: left;
     }
-     li {
+      li {
         margin: 1em;
       } 
         a {
-          color: #3d3e4e;
+          color: #c1c3c7;
           font-family: 'Suez One', serif;
           text-decoration: none;
-          margin-bottom: 10em;
+          margin-bottom: 10em;    
         }
           span {
-            background: #b5b9a4;
+            background: #c1c3c7;
             margin-top: 20px;
             border-radius: 50%;
             display: inline-block;
@@ -60,6 +81,7 @@ nav {
             width: 20px;
             margin: 0.4em;
           }
+        
 }
 
 section {
@@ -123,14 +145,13 @@ section#inicio {
 
 .logo2 {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto;                
   width: 140px;
 }
 
 .bajar {
-  background: #b5b9a4;
+  background: #c1c3c7;
   border-radius: 50%;
-  color: #656973;
   display: block;
   height: 18px;
   margin: 0 auto;
@@ -256,5 +277,8 @@ a.boton {
   .escritor {
     height: 90px;
     width: 90px;
+  }
+  .bajar {
+    display: none;
   }
 }
