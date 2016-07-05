@@ -43,20 +43,36 @@ $(document).ready(function() {
         });
     });
 
-    $('.cta a').on('click', function(e){
+    var historias = $('#historia4 p');
+
+    historias.textillate({
+        inEffects: [],
+        autoStart: true,
+        loop: false,
+        in: {
+            effect: 'fadeIn',
+            delayScale: 0,
+            delay: 0,
+            sync: false,
+            shuffle: true,
+            reverse: false,
+            callback: function () {}
+        },
+        out: {
+            effect: 'rotateOutDownLeft',
+            delayScale: 1.5,
+            delay: 50,
+            sync: false,
+            shuffle: true,
+            reverse: false,
+            callback: function () {}
+        },
+        callback: function () {},
+        type: 'word'
+    });
+
+    $('.cta a').on('click', function (e) {
         e.preventDefault();
-        $('#historia4 p').textillate({
-            outEffects: [ 'hinge' ],
-            loop: true,
-            out: {
-                    effect: 'hinge',
-                    delayScale: 1.5,
-                    delay: 50,
-                    sync: false,
-                    shuffle: false,
-                    reverse: false,
-                    callback: function () {}
-                }
-        });
+        historias.textillate('out');
     });
 });
