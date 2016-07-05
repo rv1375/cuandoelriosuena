@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "jquery": "~2.1.1",
-    "ScrollToFixed": "^1.0.8"
+    "ScrollToFixed": "^1.0.8",
+    "textillate": "^0.4.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
