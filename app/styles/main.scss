@@ -52,36 +52,37 @@ li:hover span:before {
   font-size: 1.5em;
 }
 
-
-
 nav {
     display: none;
-    margin-left: -25px;
     position: fixed;
     top: 20%;
+    padding: 10px;
+    &.desplegado {
+      display: block;
+      position: inherit;
+      background-color: #b5b9a4;
+    }
     ul {
       list-style: none;
-      text-align: left;
-    }
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    } 
       li {
-        margin: 1em;
-      } 
+        margin: 0;
+        padding: 15px;
+        border-bottom: 1px solid #ffffff;
+      }
         a {
-          color: #c1c3c7;
+          color: #fff;
           font-family: 'Suez One', serif;
-          text-decoration: none;
-          margin-bottom: 10em;    
+          text-decoration: none;    
         }
           span {
-            background: #c1c3c7;
-            margin-top: 20px;
-            border-radius: 50%;
-            display: inline-block;
-            height: 20px;
-            width: 20px;
-            margin: 0.4em;
-          }    
+            display: none;
+          }       
 }
+
 
 section {
   margin: 0 auto;
@@ -177,11 +178,13 @@ section#inicio {
     text-decoration: none;
     width: 100%;
 }
+
 .holder {
     float: right;
     width: 20%;
     margin-top: 10px;
 }
+
 a.boton {
   color: #3d3e4e;
   text-decoration: none;
@@ -266,16 +269,64 @@ a.boton {
   background-image: url( http://placehold.it/90x90?text=OVER );
 }
 
-.menu {
-    margin-left: -25px;
+
+.hamburger {
+  background: #b5b9a4;
+  position: absolute;
+  top: 10px;
+  right: 3%;
+  border-radius: 15%;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  line-height: 38px;
+  width: 30px;
+  img {
+    width: 20px;
+  }
+}
+
+#ocho {
+  top: -10px;
+}
+
+@media only screen and (min-width: 768px) {
+  
+  section {
+    min-height: 600px;
+  }
+
+  header {
+    padding-left: 20%;
+    .logo {
+      max-width: 100%;
+    }
+    p {
+      font-size: 1.1em;
+    }
+  }
+
+
+  nav {
+    display: block;
+    margin-left: -5px;
+    position: fixed;
     top: 20%;
+    &.desplegado {
+      display: block;
+      position: inherit;
+      background-color: #b5b9a4;
+    }
     ul {
       list-style: none;
       text-align: left;
-    }
+      margin: 0;
+    } 
       li {
-        margin: 1em;
-      } 
+        margin: 0;
+        padding: 10px;
+        border-bottom: 0;
+      }
         a {
           color: #c1c3c7;
           font-family: 'Suez One', serif;
@@ -290,30 +341,15 @@ a.boton {
             height: 20px;
             width: 20px;
             margin: 0.4em;
-          }
-        
+          }       
 }
 
-#ocho {
-  top: -10px;
-}
 
-@media only screen and (min-width: 768px) {
-  section {
-    min-height: 600px;
+  article {
+    width: 50%;
+    margin: 0 auto;
   }
-  header {
-    padding-left: 20%;
-    .logo {
-      max-width: 100%;
-    }
-    p {
-      font-size: 1.1em;
-    }
-  }
-  nav {
-    display: block;
-  }
+
   .descripcion {
     min-height:600px;
   }
@@ -325,25 +361,31 @@ a.boton {
       display: inline;
     }
   }
+
   .cta {
     width: 250px;
     .datos {
       display: block;
     }
   }
+
   .holder {
   width: 250px;
   }
+
   .icono img {
     padding-left: 30px;
   }
+
   .escritor {
     height: 90px;
     width: 90px;
   }
+
   .bajar {
     display: none;
   }
+
   .menu {
     display: none;
   }
