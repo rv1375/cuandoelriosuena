@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    $('article p').contents().filter(function(){return this.nodeType === 3}).wrap('<div />');
     // on click event on all anchors with a class of scrollTo
     $('a.scrollTo').on('click', function(){
       
@@ -43,7 +45,7 @@ $(document).ready(function() {
         });
     });
 
-    var historias = $('#historia4 p');
+    var historias = $('article p div');
 
     historias.textillate({
         inEffects: [],
@@ -73,6 +75,14 @@ $(document).ready(function() {
 
     $('.cta a').on('click', function (e) {
         e.preventDefault();
-        historias.textillate('out');
+        var articulo = $(this).attr('href');
+        if( $(articulo).data("visible") === "no" ) {
+            $(articulo + " p div").textillate('in');
+            $(articulo).data("visible", "si");
+        }else{
+            $(articulo + " p div").textillate('out');
+            $(articulo).data("visible", "no");
+        }
     });
 });
+
