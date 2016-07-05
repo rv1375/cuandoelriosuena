@@ -23,6 +23,15 @@ $(document).ready(function() {
             }
     });
 
+    $('.hamburger img').on('click', function(){ 
+            if ($('nav').hasClass('desplegado')) {
+                $('nav').removeClass('desplegado');
+
+            }else{
+                $('nav').addClass('desplegado');
+            }
+    });
+
     var summaries = $('.cta');
     summaries.each(function(i) {
         var summary = $(summaries[i]);
