@@ -125,6 +125,10 @@ section#inicio {
     }
 }
 
+strong {
+  font-weight: normal;
+}
+
 .fondo {
   background-color: rgba(214,216,182,0.3);
 }
@@ -236,36 +240,27 @@ a.boton {
 }
 #fernando {
     background-image: url(../images/escritores/fernando.jpg );
-    &:active {
-      background-image: url(../images/escritores/fernando_s.jpg );
-    }
-    &:focus {
-      background-image: url(../images/escritores/fernando_s.jpg );
-    }
-
 }
+
+.boton.invisible #fernando {
+    background-image: url(../images/escritores/fernando_s.jpg );
+}
+
+
 #stephany {
     background-image: url(../images/escritores/stephany.jpg );
-    &:active {
-      background-image: url(../images/escritores/stephany_s.jpg );
-    }
-    &:focus {
-      background-image: url(../images/escritores/stephany_s.jpg );
-    }
-
 }
+
+.boton.invisible #stephany {
+    background-image: url(../images/escritores/stephany_s.jpg );
+}
+
 #angelica {
     background-image: url(../images/escritores/angelica.jpg );
-    &:active {
-      background-image: url(../images/escritores/angelica_s.jpg );
-    }
-    &:focus {
-      background-image: url(../images/escritores/angelica_s.jpg );
-    }
-
 }
-.escritor:hover {
-  background-image: url( http://placehold.it/90x90?text=OVER );
+
+.boton.invisible #angelica {
+  background-image: url(../images/escritores/angelica_s.jpg );
 }
 
 

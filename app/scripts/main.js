@@ -70,9 +70,9 @@ $(document).ready(function() {
             callback: function () {}
         },
         out: {
-            effect: 'rotateOutDownLeft',
+            effect: 'fadeOutLeftBig',
             delayScale: 1.5,
-            delay: 50,
+            delay: 20,
             sync: false,
             shuffle: true,
             reverse: false,
@@ -86,9 +86,11 @@ $(document).ready(function() {
         e.preventDefault();
         var articulo = $(this).attr('href');
         if( $(articulo).data("visible") === "no" ) {
+            $(this).removeClass("invisible").addClass("visible");
             $(articulo + " p div").textillate('in');
             $(articulo).data("visible", "si");
         }else{
+            $(this).removeClass("visible").addClass("invisible");
             $(articulo + " p div").textillate('out');
             $(articulo).data("visible", "no");
         }
