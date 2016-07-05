@@ -37,7 +37,7 @@ li:hover a {
 }
 
 li:hover span {
-  background: transparent;
+  background: #fff;
 }
 
 li:hover span:before {
@@ -49,7 +49,7 @@ li:hover span:before {
   position: relative;
   left: 4px;
   color: #3d3e4e;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 nav {
