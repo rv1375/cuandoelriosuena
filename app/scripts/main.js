@@ -11,7 +11,7 @@ $(document).ready(function() {
       $('body, html').animate({
         
         // the magic - scroll to section
-        "scrollTop": $('#'+scrollTo).offset().top
+        'scrollTop': $('#'+scrollTo).offset().top
       }, 2000 );
       return false;
     })
@@ -85,14 +85,14 @@ $(document).ready(function() {
     $('.cta a').on('click', function (e) {
         e.preventDefault();
         var articulo = $(this).attr('href');
-        if( $(articulo).data("visible") === "no" ) {
-            $(this).removeClass("invisible").addClass("visible");
-            $(articulo + " p div").textillate('in');
-            $(articulo).data("visible", "si");
+        if( $(articulo).data('visible') === 'no' ) {
+            $(this).removeClass('invisible').addClass('visible');
+            $(articulo + ' p div').textillate('in');
+            $(articulo).data('visible', 'si');
         }else{
-            $(this).removeClass("visible").addClass("invisible");
-            $(articulo + " p div").textillate('out');
-            $(articulo).data("visible", "no");
+            $(this).removeClass('visible').addClass('invisible');
+            $(articulo + ' p div').textillate('out');
+            $(articulo).data('visible', 'no');
         }
     });
 });
