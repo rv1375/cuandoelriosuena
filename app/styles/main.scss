@@ -292,9 +292,6 @@ a.boton {
 
   header {
     padding-left: 20%;
-    .logo {
-      max-width: 100%;
-    }
     p {
       font-size: 1.1em;
     }
@@ -335,15 +332,8 @@ a.boton {
             height: 20px;
             width: 20px;
             margin: 0.4em;
-          }       
-}
-
-
-  article {
-    width: 50%;
-    margin: 0 auto;
+          }
   }
-
   .descripcion {
     min-height:600px;
   }
@@ -382,5 +372,15 @@ a.boton {
 
   .menu {
     display: none;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  img.logo {
+    max-width: 80%;
+  }
+  article#historia1 {
+    margin-top: 12%;
   }
 }
