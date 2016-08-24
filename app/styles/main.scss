@@ -262,6 +262,13 @@ a.boton {
 .boton.invisible #angelica {
   background-image: url(../images/escritores/angelica_s.jpg );
 }
+#miguel {
+    background-image: url(../images/escritores/miguel.jpg );
+}
+
+.boton.invisible #miguel {
+  background-image: url(../images/escritores/miguel_s.jpg );
+}
 
 
 .hamburger {
@@ -297,17 +304,10 @@ a.boton {
     }
   }
 
-
   nav {
-    display: block;
-    margin-left: -5px;
-    position: fixed;
-    top: 20%;
-    &.desplegado {
-      display: block;
-      position: inherit;
-      background-color: #b5b9a4;
-    }
+    display: none;
+    margin-left: -17px;
+    font-size: 0.9em;
     ul {
       list-style: none;
       text-align: left;
@@ -337,7 +337,6 @@ a.boton {
   .descripcion {
     min-height:600px;
   }
-
   article {
     width: 50%;
     margin: 0 auto;
@@ -345,36 +344,29 @@ a.boton {
       display: inline;
     }
   }
-
   .cta {
     width: 250px;
     .datos {
       display: block;
     }
   }
-
   .holder {
   width: 250px;
   }
-
   .icono img {
     padding-left: 30px;
   }
-
   .escritor {
     height: 90px;
     width: 90px;
   }
-
   .bajar {
     display: none;
   }
-
   .menu {
     display: none;
   }
 }
-
 
 @media only screen and (min-width: 1024px) {
   img.logo {
@@ -382,5 +374,14 @@ a.boton {
   }
   article#historia1 {
     margin-top: 12%;
+  }
+  nav {
+    display: block;}
+}
+
+@media only screen and (min-width: 1280px) {
+  nav {
+    margin-left: -12px;
+    font-size: 1.1em;
   }
 }
