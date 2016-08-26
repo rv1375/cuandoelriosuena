@@ -237,7 +237,17 @@ a.boton {
   height: 50px;
   margin: 0 auto;
   width: 50px;
+
 }
+#susana {
+    background-image: url(../images/escritores/susana.jpg );
+}
+
+.boton.invisible #susana {
+    background-image: url(../images/escritores/susana_s.jpg );
+}
+
+
 #fernando {
     background-image: url(../images/escritores/fernando.jpg );
 }
